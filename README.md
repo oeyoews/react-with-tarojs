@@ -2,13 +2,15 @@
 
 ```bash
 git clone https://github.com/oeyoews/react-with-tarojs
-yarn install 
-yarn run dev:weapp 
+yarn install
+yarn run dev:weapp
 ```
 
 at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:h5` and to preview on your local browser
 
 ## Demo
+
+![tarojs](https://i.imgur.com/ghE4Ap4.png)
 
 - https://tarojs.surge.sh
 
