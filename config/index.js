@@ -9,7 +9,7 @@ const config = {
   },
   sourceRoot: "src",
   outputRoot: "dist",
-  plugins: [],
+  plugins: [["@dcasia/mini-program-tailwind-webpack-plugin/dist/taro", {}]],
   defineConstants: {},
   copy: {
     patterns: [],

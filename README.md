@@ -8,6 +8,8 @@
 
 ## bug
 
+* hover:scale-105(may not block element)
+* need disable hmr
 * need install typescript manually
 * on linux, this wechat-devtools, sudo cp package.nw nwjs -r(this folder is wrong)
 
