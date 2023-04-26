@@ -39,3 +39,4 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 ## Question
 
 - why use class instead of function usage for components
+- out of box with ui to build wechat mini program based some websites
