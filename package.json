@@ -9,6 +9,7 @@
     "css": "none"
   },
   "scripts": {
+    "deploy:surge": "surge dist --domain tarojs.surge.sh",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -52,6 +53,7 @@
     "@tarojs/taro": "3.6.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "surge": "^0.23.1",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
