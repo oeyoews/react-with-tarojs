@@ -6,9 +6,9 @@
 
 - doublequote error lint
 - vant ui
-- add tailwindcss
 - taro ui https://taro-ui.jd.com/#/docs/icon
 - setup autoformat for vscode
+- [x] add tailwindcss
 
 ## bug
 
