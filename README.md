@@ -1,3 +1,7 @@
+## Upload program to Wechat
+
+`yarn build:weapp` and click upload button to wechat mini program.
+
 ## Installation
 
 ```bash
@@ -16,6 +20,9 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## TODO
 
+- wechat mini program judge need time
+- backend ???
+- api ???
 - doublequote error lint
 - vant ui
 - taro ui https://taro-ui.jd.com/#/docs/icon
