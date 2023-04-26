@@ -9,7 +9,7 @@
     "css": "none"
   },
   "scripts": {
-    "deploy:surge": "surge dist --domain tarojs.surge.sh",
+    "deploy:surge": "yarn build:h5 && surge dist --domain tarojs.surge.sh",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
