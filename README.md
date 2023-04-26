@@ -27,6 +27,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 - vant ui
 - taro ui https://taro-ui.jd.com/#/docs/icon
 - setup autoformat for vscode
+- check some wechat documentation about wechat mini program, such relative community
 - [x] add tailwindcss
 
 ## bug
