@@ -1,3 +1,5 @@
+const { UnifiedWebpackPluginV5 } = require("weapp-tailwindcss-webpack-plugin");
+
 const config = {
   projectName: "myApp",
   date: "2023-4-26",
@@ -9,7 +11,7 @@ const config = {
   },
   sourceRoot: "src",
   outputRoot: "dist",
-  plugins: [["@dcasia/mini-program-tailwind-webpack-plugin/dist/taro", {}]],
+  plugins: [],
   defineConstants: {},
   copy: {
     patterns: [],
@@ -21,6 +23,20 @@ const config = {
     enable: true, // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
   mini: {
+    webpackChain(chain, webpack) {
+      chain.merge({
+        plugin: {
+          install: {
+            plugin: UnifiedWebpackPluginV5,
+            args: [
+              {
+                appType: "taro",
+              },
+            ],
+          },
+        },
+      });
+    },
     postcss: {
       pxtransform: {
         enable: true,

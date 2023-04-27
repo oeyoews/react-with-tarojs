@@ -9,6 +9,7 @@
     "css": "none"
   },
   "scripts": {
+    "postinstall": "weapp-tw patch",
     "deploy:surge": "yarn build:h5 && surge dist --domain tarojs.surge.sh",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -58,23 +59,25 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
-    "@dcasia/mini-program-tailwind-webpack-plugin": "^1.5.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@tarojs/cli": "3.6.5",
     "@tarojs/webpack5-runner": "3.6.5",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.0",
     "@types/webpack-env": "^1.13.6",
+    "autoprefixer": "^10.4.14",
     "babel-preset-taro": "3.6.5",
     "eslint": "^8.12.0",
     "eslint-config-taro": "3.6.5",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "postcss": "^8.4.18",
+    "postcss": "^8.4.23",
     "react-refresh": "^0.11.0",
     "stylelint": "^14.4.0",
+    "tailwindcss": "^3.3.2",
     "ts-node": "^10.9.1",
+    "weapp-tailwindcss-webpack-plugin": "^2.1.2",
     "webpack": "5.78.0"
   }
 }
