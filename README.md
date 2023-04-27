@@ -2,7 +2,7 @@
 
 - `yarn build:weapp` and click upload button to wechat mini program.
 - and login mp.weixin.app.com to upload app again
-- and need release after checkout
+- and need release after checkout(https://mp.weixin.qq.com/wxamp/wacodepage/getcodepage?token=1325454370&lang=zh_CN)
 
 ## Installation
 
@@ -17,11 +17,13 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 ## Demo
 
 ![tarojs](https://i.imgur.com/ghE4Ap4.png)
+![tarojs](https://i.imgur.com/uoJwR0y.png)
 
 - https://tarojs.surge.sh
 
 ## TODO
 
+- useeffect, usestate, react hooks
 - wechat mini program judge need time
 - backend ???
 - api ???
