@@ -35,7 +35,7 @@ function Index() {
         onClick={goTo}
         className="bg-lime-300 inline font-bold rounded p-2 m-2 hover:underline cursor-pointer"
       >
-        Navigation
+        Navigation  
       </Button>
     </>
   );

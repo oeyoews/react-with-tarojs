@@ -13,7 +13,7 @@ function Blog() {
 	return (
 		<>
 			<View>Blog Page</View>
-			<Button onClick={goTo} className='inline rounded bg-red-200 p-2 m-2 cursor-pointer hover:underline '>Nav to home page</Button>
+			<Button onClick={goTo} className='inline rounded bg-red-200 p-2 m-2 cursor-pointer hover:underline'>Nav to home page</Button>
 		</>
 
 	);
