@@ -12,12 +12,12 @@ export default function Index() {
 
   return (
     <>
-    <Text className="font-sans text-lg font-bold m-2 flex justify-center">Taro with react miniprogram</Text>
+      <Text className="font-sans text-lg font-bold m-2 flex justify-center">Taro with react miniprogram</Text>
       <View className="index bg-indigo-200 p-2 rounded m-2">
-        <Welcome name="Success" />
+        <Welcome name="Success 👋 Hi  " />
       </View>
-      <View className="bg-rose-300 rounded p-2 m-2 font-mono">
-        <Welcome name="Debug" />
+      <View className="bg-red-400 rounded p-2 m-2 font-mono">
+        <Welcome name="Debug 🔥 Fire" />
       </View>
     </>
   );
