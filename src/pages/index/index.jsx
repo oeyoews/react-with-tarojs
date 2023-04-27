@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { View, Text, Button } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
 import Welcome from "../../components/Welcome";
-import "./index.css";
 import "./tailwind.css";
 import Child from "../../components/Child";
 
+// suppport props for function usage, not arrow
 const goTo = () => {
   Taro.navigateTo({
-    url: "/pages/blog/blog",
+    url: "/pages/blog/index",
+    // url: "/pages/test-page/index",
+    // url: "/pages/test/index"
   });
 };
 
@@ -24,7 +26,7 @@ function Index() {
       <Text className="font-sans text-lg font-bold m-2 flex justify-center">
         {frameWork} with react miniprogram
       </Text>
-      <View className="index bg-indigo-200 p-2 rounded m-2">
+      <View className="bg-indigo-200 p-2 rounded m-2">
         <Welcome name="Success 👋 Hi  " />
       </View>
       <View className="bg-red-400 rounded p-2 m-2 font-mono">
@@ -35,7 +37,7 @@ function Index() {
         onClick={goTo}
         className="bg-lime-300 inline font-bold rounded p-2 m-2 hover:underline cursor-pointer"
       >
-        Navigation  
+        Navigation
       </Button>
     </>
   );
