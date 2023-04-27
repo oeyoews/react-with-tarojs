@@ -55,4 +55,10 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## better tailwindcss
 
-* https://github.com/sonofmagic/weapp-tailwindcss-webpack-plugin#%E5%8E%9F%E7%90%86%E7%AF%87
+- https://github.com/sonofmagic/weapp-tailwindcss-webpack-plugin#%E5%8E%9F%E7%90%86%E7%AF%87
+
+## taro
+
+### router
+
+- https://nervjs.github.io/taro-docs/docs/router/
