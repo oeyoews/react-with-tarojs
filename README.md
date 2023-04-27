@@ -1,6 +1,7 @@
 ## Upload program to Wechat
 
-`yarn build:weapp` and click upload button to wechat mini program.
+* `yarn build:weapp` and click upload button to wechat mini program.
+* and login mp.weixin.app.com to upload app again
 
 ## Installation
 
