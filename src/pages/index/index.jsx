@@ -3,14 +3,14 @@ import { View, Text, Button } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
 import Welcome from "../../components/Welcome";
 import "./index.css";
-import "windi.css";
+import "./tailwind.css";
 import Child from "../../components/Child";
 
 const goTo = () => {
   Taro.navigateTo({
-    url: "/pages/blog/blog"
+    url: "/pages/blog/blog",
   });
-}
+};
 
 function Index() {
   const [frameWork, setFrameWork] = useState("Taro");
@@ -21,7 +21,9 @@ function Index() {
 
   return (
     <>
-      <Text className="font-sans text-lg font-bold m-2 flex justify-center">{frameWork} with react miniprogram</Text>
+      <Text className="font-sans text-lg font-bold m-2 flex justify-center">
+        {frameWork} with react miniprogram
+      </Text>
       <View className="index bg-indigo-200 p-2 rounded m-2">
         <Welcome name="Success 👋 Hi  " />
       </View>
@@ -29,7 +31,12 @@ function Index() {
         <Welcome name="Debug 🔥 Fire" />
       </View>
       <Child frameWork={frameWork + " emo"} />
-      <Button onClick={goTo} className="bg-lime-300 inline font-bold rounded p-2 m-2 hover:underline cursor-pointer">Navigation</Button>
+      <Button
+        onClick={goTo}
+        className="bg-lime-300 inline font-bold rounded p-2 m-2 hover:underline cursor-pointer"
+      >
+        Navigation
+      </Button>
     </>
   );
 }

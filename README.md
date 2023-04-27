@@ -52,3 +52,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 - https://github.com/msojocs/wechat-web-devtools-linux/releases/tag/continuous
 
 ## use windicss intellisense
+
+## better tailwindcss
+
+* https://github.com/sonofmagic/weapp-tailwindcss-webpack-plugin#%E5%8E%9F%E7%90%86%E7%AF%87
