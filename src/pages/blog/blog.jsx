@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, Text, Button } from '@tarojs/components'
-import Taro from '@tarojs/taro';
+import Taro, { useState } from '@tarojs/taro';
+import "windi.css";
+
 
 const goTo = () => {
 	Taro.navigateTo({

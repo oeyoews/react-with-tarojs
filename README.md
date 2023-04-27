@@ -1,8 +1,8 @@
 ## Upload program to Wechat
 
-* `yarn build:weapp` and click upload button to wechat mini program.
-* and login mp.weixin.app.com to upload app again
-* and need release after checkout
+- `yarn build:weapp` and click upload button to wechat mini program.
+- and login mp.weixin.app.com to upload app again
+- and need release after checkout
 
 ## Installation
 
@@ -34,11 +34,11 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## bug
 
-* auto compile wechat app
-* hover:scale-105(may not block element)
-* need disable hmr
-* need install typescript manually
-* on linux, this wechat-devtools, sudo cp package.nw nwjs -r(this folder is wrong)
+- auto compile wechat app
+- hover:scale-105(may not block element)
+- need disable hmr
+- need install typescript manually
+- on linux, this wechat-devtools, sudo cp package.nw nwjs -r(this folder is wrong)
 
 ## Question
 
@@ -47,4 +47,6 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## Devtools
 
-* https://github.com/msojocs/wechat-web-devtools-linux/releases/tag/continuous
+- https://github.com/msojocs/wechat-web-devtools-linux/releases/tag/continuous
+
+## use windicss intellisense
