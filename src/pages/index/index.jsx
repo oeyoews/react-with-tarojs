@@ -33,12 +33,12 @@ function Index() {
         <Welcome name="Debug 🔥 Fire" />
       </View>
       <Child frameWork={frameWork + " emo"} />
-      <Button
+      <Text
         onClick={goTo}
         className="bg-lime-300 inline font-bold rounded p-2 m-2 hover:underline cursor-pointer"
       >
         Navigation
-      </Button>
+      </Text>
     </>
   );
 }

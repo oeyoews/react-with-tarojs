@@ -3,7 +3,7 @@
   "projectname": "myApp",
   "setting": {
     "compileHotReLoad": false,
-    "urlCheck": false
+    "urlCheck": true
   },
   "libVersion": "2.31.0"
 }
