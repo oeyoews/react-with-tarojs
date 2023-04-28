@@ -18,7 +18,9 @@ function VantButtonDemo() {
       <Cell title="展示弹出层" isLink onClick={() => setShow(true)} />
       <Cell title="顶部弹出" isLink onClick={() => showAction('top')} />
       <Popup show={show} onClose={() => setShow(false)}>
-        内容
+        <View className="bg-lime-200 font-bold p-2 m-2">
+          内容
+        </View>
       </Popup>
       <Button type="default">默认按钮</Button>
       <Button type="primary">主要按钮</Button>

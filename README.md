@@ -34,11 +34,11 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 - backend ???
 - api ???
 - doublequote error lint
-- vant ui https://antmjs.github.io/vantui/main/#quickstart?target=%E6%B3%A8%E6%84%8F
 - taro ui https://taro-ui.jd.com/#/docs/icon
 - setup autoformat for vscode
 - check some wechat documentation about wechat mini program, such relative community
 - [x] add tailwindcss
+- [x] vant ui https://antmjs.github.io/vantui/main/#quickstart?target=%E6%B3%A8%E6%84%8F
 
 ## bug
 
