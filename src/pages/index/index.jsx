@@ -5,7 +5,6 @@ import Welcome from "../../components/Welcome";
 import "./tailwind.css";
 import Child from "../../components/Child";
 
-
 function Index() {
   const [frameWork, setFrameWork] = useState("Taro");
 
@@ -18,26 +17,25 @@ function Index() {
     });
   };
 
-
   useLoad(() => {
     console.log("Page loaded.");
   });
 
   return (
     <>
-      <Text className="font-sans text-lg font-bold m-2 flex justify-center">
+      <Text className="m-2 flex justify-center font-sans text-lg font-bold">
         {frameWork} with react miniprogram
       </Text>
-      <View className="bg-indigo-200 p-2 rounded m-2">
+      <View className="m-2 rounded bg-indigo-200 p-2">
         <Welcome name="Success 👋 Hi, TaroJs  " />
       </View>
-      <View className="bg-red-400 rounded p-2 m-2 font-mono">
+      <View className="m-2 rounded bg-red-400 p-2 font-mono">
         <Welcome name="Debug 🔥 Fire" />
       </View>
       <Child frameWork={frameWork + " emo"} />
       <Text
         onClick={goTo}
-        className="bg-lime-300 inline font-bold rounded p-2 m-2 hover:underline cursor-pointer"
+        className="m-2 inline cursor-pointer rounded bg-lime-300 p-2 font-bold hover:underline"
       >
         Navigation
       </Text>

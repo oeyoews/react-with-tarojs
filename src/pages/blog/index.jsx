@@ -3,6 +3,7 @@ import { View, Text } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import "../index/tailwind.css"
 import { Button, Popup, Cell, Icon, Image, Tag } from '@antmjs/vantui'
+import Count from "../../components/Count";
 
 function VantButtonDemo() {
   const [show, setShow] = useState(false);
@@ -138,6 +139,7 @@ function BlogPage() {
       </View>
       <VantButtonDemo />
       <Tag type="primary">标签</Tag>
+      <Count />
     </>
   );
 }
