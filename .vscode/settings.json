@@ -5,5 +5,7 @@
 	"editor.fontSize": 22,
 	"editor.formatOnSave": true,
 	"editor.minimap.autohide": true,
-	"editor.minimap.enabled": true
+	"editor.minimap.enabled": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorBlinking": "solid"
 }
