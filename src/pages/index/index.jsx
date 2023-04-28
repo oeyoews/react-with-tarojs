@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, Button } from "@tarojs/components";
+import { View, Text } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
 import Welcome from "../../components/Welcome";
 import "./tailwind.css";

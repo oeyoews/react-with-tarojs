@@ -1,7 +1,56 @@
 import React, { useState } from "react";
-import { View, Text, Button, Image } from "@tarojs/components";
+import { View, Text, Image } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import "../index/tailwind.css"
+import { Button, Popup, Cell } from '@antmjs/vantui'
+
+function VantButtonDemo() {
+  const [show, setShow] = useState(false);
+  const [position, setPosition] = useState('top')
+
+  const showAction = function (position) {
+    setPosition(position)
+    setShow(true)
+  }
+
+  return (
+    <View className="bg-lime-200 m-2 p-2 rounded">
+      <Cell title="展示弹出层" isLink onClick={() => setShow(true)} />
+      <Cell title="顶部弹出" isLink onClick={() => showAction('top')} />
+      <Popup show={show} onClose={() => setShow(false)}>
+        内容
+      </Popup>
+      <Button type="default">默认按钮</Button>
+      <Button type="primary">主要按钮</Button>
+      <Button type="info">信息按钮</Button>
+      <Button type="warning">警告按钮</Button>
+      <Button type="danger">危险按钮</Button>
+      <Button type="primary" plain>默认按钮</Button>
+      <Button type="info" plain>默认按钮</Button>
+      <Button type="danger" plain>默认按钮</Button>
+      <Button plain hairline type="primary">
+        细边框按钮
+      </Button>
+      <Button disabled type="primary">
+        禁用状态
+      </Button>
+      <Button loading type="primary" />
+      <Button loading type="primary" loadingType="spinner" />
+      <Button loading type="info" loadingText="加载中..." />
+
+      <Button icon="starO" type="primary" />
+      <Button icon="starO" type="primary">
+        按钮
+      </Button>
+      <Button
+        icon="https://antm-js.gitee.io/resource/antmjs-vantui.jpg"
+        type="info"
+      >
+        按钮
+      </Button>
+    </View>
+  )
+}
 
 
 function BlogPage() {
@@ -70,6 +119,7 @@ function BlogPage() {
           })
         } */}
       </View>
+      <VantButtonDemo />
     </>
   );
 }

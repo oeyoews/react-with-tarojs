@@ -62,7 +62,7 @@ const config = {
     },
   },
   h5: {
-    // esnextModules: [/@antmjs[\/]vantui/],
+    esnextModules: [/@antmjs[\/]vantui/],
     publicPath: "/",
     staticDirectory: "static",
     postcss: {
