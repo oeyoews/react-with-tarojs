@@ -27,7 +27,7 @@ function Index() {
         {frameWork} with react miniprogram
       </Text>
       <View className="bg-indigo-200 p-2 rounded m-2">
-        <Welcome name="Success 👋 Hi  " />
+        <Welcome name="Success 👋 Hi, TaroJs  " />
       </View>
       <View className="bg-red-400 rounded p-2 m-2 font-mono">
         <Welcome name="Debug 🔥 Fire" />
