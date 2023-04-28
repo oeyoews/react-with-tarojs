@@ -8,6 +8,7 @@ function VantButtonDemo() {
   const [show, setShow] = useState(false);
   const [position, setPosition] = useState('top')
 
+
   const showAction = function (position) {
     setPosition(position)
     setShow(true)
@@ -57,11 +58,16 @@ function VantButtonDemo() {
 
 function BlogPage() {
 
+  const goBack = () => {
+    Taro.navigateBack();
+  }
+
   const goTo = () => {
     Taro.navigateTo({
       url: "/pages/index/index",
     });
   };
+
   const [hitokoto, setHitokoto] = useState('')
   const [articleList, setArticleList] = useState([])
   const [articleStatus, setArticleStatus] = useState('')
@@ -94,7 +100,7 @@ function BlogPage() {
       </View>
       <View className="flex justify-center items-center mb-4">Blog Page</View>
       <Text
-        onClick={goTo}
+        onClick={goBack}
         className="inline rounded-sm border-none bg-red-300 p-2 m-2 cursor-pointer hover:underline"
       >
         Back To Home

@@ -5,17 +5,19 @@ import Welcome from "../../components/Welcome";
 import "./tailwind.css";
 import Child from "../../components/Child";
 
-// suppport props for function usage, not arrow
-const goTo = () => {
-  Taro.navigateTo({
-    url: "/pages/blog/index",
-    // url: "/pages/test-page/index",
-    // url: "/pages/test/index"
-  });
-};
 
 function Index() {
   const [frameWork, setFrameWork] = useState("Taro");
+
+  // suppport props for function usage, not arrow
+  const goTo = () => {
+    Taro.navigateTo({
+      url: "/pages/blog/index",
+      // url: "/pages/test-page/index",
+      // url: "/pages/test/index"
+    });
+  };
+
 
   useLoad(() => {
     console.log("Page loaded.");
