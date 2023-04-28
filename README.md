@@ -23,6 +23,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## TODO
 
+- domain(temp: not check for details setinggs or use h5)
 - how to remove taro after border
 - how to set font size
 - useeffect, usestate, react hooks
