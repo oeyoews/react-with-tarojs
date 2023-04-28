@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { View, Text, Image } from "@tarojs/components";
+import { View, Text } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import "../index/tailwind.css"
-import { Button, Popup, Cell } from '@antmjs/vantui'
+import { Button, Popup, Cell, Icon, Image, Tag } from '@antmjs/vantui'
 
 function VantButtonDemo() {
   const [show, setShow] = useState(false);
@@ -99,6 +99,15 @@ function BlogPage() {
         ></Image>
       </View>
       <View className="flex justify-center items-center mb-4">Blog Page</View>
+      <Icon name="chat-o" size="32px" className="icon"></Icon>
+      {/* This rounded class not work for vant icon lib */}
+      <Icon dot info={"avatar"} name="https://q1.qlogo.cn/g?b=qq&nk=2956398608&s=100" size="32px" className="rounded icon"></Icon>
+      <Icon
+        name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
+        size="32px"
+        className="icon"
+      ></Icon>
+      <Icon name="arrow-left" size="32px" className=""></Icon>
       <Text
         onClick={goBack}
         className="inline rounded-sm border-none bg-red-300 p-2 m-2 cursor-pointer hover:underline"
@@ -128,6 +137,7 @@ function BlogPage() {
         } */}
       </View>
       <VantButtonDemo />
+      <Tag type="primary">标签</Tag>
     </>
   );
 }

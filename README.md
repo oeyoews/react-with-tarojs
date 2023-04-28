@@ -24,7 +24,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 ## TODO
 
 - use `Redux` to manage state
-- add svg lib
+- [x] add svg lib(use vant ui instead of)
 - add notify lib
 - domain(temp: not check for details setinggs or use h5)
 - how to remove taro after border
