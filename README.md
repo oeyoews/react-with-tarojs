@@ -23,6 +23,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## TODO
 
+- add camelcase vscode plugin supported
 - use `Redux` to manage state
 - [x] add svg lib(use vant ui instead of)
 - add notify lib
@@ -71,4 +72,4 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## Advance Template
 
-* https://github.com/AntmJS/temptaro
+- https://github.com/AntmJS/temptaro

@@ -7,5 +7,6 @@
 	"editor.minimap.autohide": true,
 	"editor.minimap.enabled": true,
 	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.fontFamily": "Maple Mono",
 	"editor.cursorBlinking": "solid"
 }
