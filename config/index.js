@@ -11,6 +11,7 @@ const config = {
   },
   sourceRoot: "src",
   outputRoot: "dist",
+  // outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: [],
   defineConstants: {},
   copy: {
@@ -23,6 +24,9 @@ const config = {
     enable: false, // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
   mini: {
+    prerender: {
+      // include: ['pages/index/index'], // `pages/nodes/nodes` 也会参与 prerender
+    },
     webpackChain(chain, webpack) {
       chain.merge({
         plugin: {
