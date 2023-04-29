@@ -25,7 +25,7 @@ const config = {
   },
   mini: {
     prerender: {
-      // include: ['pages/index/index'], // `pages/nodes/nodes` 也会参与 prerender
+      include: ["pages/slides/index"], // `pages/nodes/nodes` 也会参与 prerender
     },
     webpackChain(chain, webpack) {
       chain.merge({

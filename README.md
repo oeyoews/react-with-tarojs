@@ -23,8 +23,9 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## TODO
 
+- loading another is slow
 - add camelcase vscode plugin supported
-- use `Redux` to manage state
+- ~~use `Redux` to manage state~~
 - [x] add svg lib(use vant ui instead of)
 - add notify lib
 - domain(temp: not check for details setinggs or use h5)
