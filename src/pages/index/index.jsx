@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { View, Text, Image } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
 import "./tailwind.css";
-import { faker } from '@faker-js/faker';
-
 
 const Index = () => {
   function goTo(page = "blog") {
@@ -19,7 +17,6 @@ const Index = () => {
   return (
     <>
       <View className="my-2">
-        <Image src={faker.image.avatar()} className="h-8 w-8 rounded-full block mx-auto mb-8" />
         <Text
           onClick={() => {
             goTo("slides");
@@ -37,5 +34,5 @@ const Index = () => {
       </View>
     </>
   );
-}
+};
 export default Index;
