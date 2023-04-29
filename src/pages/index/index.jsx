@@ -9,13 +9,11 @@ function Index() {
   const [frameWork, setFrameWork] = useState("Taro");
 
   // suppport props for function usage, not arrow
-  const goTo = () => {
+  function goTo(page = "blog") {
     Taro.navigateTo({
-      url: "/pages/blog/index",
-      // url: "/pages/test-page/index",
-      // url: "/pages/test/index"
+      url: `/pages/${page}/index`,
     });
-  };
+  }
 
   useLoad(() => {
     console.log("Page loaded.");
@@ -34,10 +32,18 @@ function Index() {
       </View>
       <Child frameWork={frameWork + " emo"} />
       <Text
-        onClick={goTo}
+        onClick={() => {
+          goTo("slides");
+        }}
         className="m-2 inline cursor-pointer rounded bg-lime-300 p-2 font-bold hover:underline"
       >
-        Navigation
+        Slides
+      </Text>
+      <Text
+        onClick={() => goTo("blog")}
+        className="m-2 inline cursor-pointer rounded bg-lime-300 p-2 font-bold hover:underline"
+      >
+        Blog
       </Text>
     </>
   );
