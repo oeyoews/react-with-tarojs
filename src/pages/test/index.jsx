@@ -2,6 +2,7 @@ import { View, Text } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import TestDemo from "../../components/Test";
 import "../index/tailwind.css";
+import CardList from "../../components/Cards";
 
 export default function Test() {
   useLoad(() => {
@@ -9,9 +10,6 @@ export default function Test() {
   });
 
   return (
-    <View className="">
-      <Text className="rounded bg-lime-200 p-1 hover:bg-lime-300">Test Page</Text>
-      <TestDemo />
-    </View>
+        <CardList />
   );
 }

@@ -1,0 +1,9 @@
+.card-container {
+  height: 100vh;
+}
+
+.card-item {
+  height: calc(100vh - 60rpx);
+  margin-top: 30rpx;
+  background-color: #fff;
+}
