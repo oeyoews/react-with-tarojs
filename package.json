@@ -39,7 +39,6 @@
   "dependencies": {
     "@antmjs/vantui": "^3.0.0",
     "@babel/runtime": "^7.21.5",
-    "@faker-js/faker": "^7.6.0",
     "@tarojs/components": "3.6.6",
     "@tarojs/helper": "3.6.6",
     "@tarojs/plugin-framework-react": "3.6.6",
