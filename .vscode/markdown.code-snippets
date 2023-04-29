@@ -1,0 +1,9 @@
+{
+	"Readme Template": {
+		"prefix": "tpl",
+		"body": [
+			"## README",
+		],
+		"description": "readme template",
+	}
+}
