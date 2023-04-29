@@ -74,3 +74,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 ## Advance Template
 
 - https://github.com/AntmJS/temptaro
+
+## NOTE
+
+* fakerjs too large, not suitable production
