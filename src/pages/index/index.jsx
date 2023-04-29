@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, Image } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
-import "../../styles/tailwind.css";
-import "@/tailwind"
+import '@/tailwind'
 import Gravatar from '@/components/Gravatar';
 
 const Index = () => {

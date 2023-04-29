@@ -1,7 +1,7 @@
 import Taro, { useLoad } from "@tarojs/taro";
 import { View, Text, ScrollView, Image } from "@tarojs/components";
-import CardList from "../../components/Cards";
-import "../../styles/tailwind.css"
+import CardList from "@/components/Cards";
+import '@/tailwind'
 
 export default function Slides() {
   function goBack(page = "") {

@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import { View, Text, ScrollView, Image } from "@tarojs/components";
 import SwipeableViews from "react-swipeable-views";
 import "../styles/card.css";
-import "../styles/tailwind.css";
+import '@/tailwind'
 
 const loremDescription =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ";
@@ -60,7 +60,7 @@ export default function CardList() {
         style={{ height: "100vh" }}
         slideStyle={{ height: "100vh" }}
         enableMouseEvents={true}
-        // animateTransitions={true} // 取消过渡动画
+      // animateTransitions={true} // 取消过渡动画
       >
         {cards.map((card, index) => (
           <View key={card.id} className="h-screen bg-gray-100">

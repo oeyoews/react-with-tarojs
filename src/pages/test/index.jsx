@@ -1,7 +1,7 @@
 import { View, Text } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
-import '../../styles/tailwind.css'
-import CardList from "../../components/Cards";
+import '@/tailwind'
+import CardList from "@/components/Cards";
 
 export default function Test() {
   useLoad(() => {
