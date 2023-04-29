@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { View, Text, Image } from "@tarojs/components";
 import Taro, { useLoad } from "@tarojs/taro";
-import "./tailwind.css";
+import "../../styles/tailwind.css";
+import "@/tailwind"
+import Gravatar from '@/components/Gravatar';
 
 const Index = () => {
   function goTo(page = "blog") {
@@ -16,6 +18,7 @@ const Index = () => {
 
   return (
     <>
+      <Gravatar />
       <View className="my-2">
         <Text
           onClick={() => {

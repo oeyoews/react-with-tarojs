@@ -1,4 +1,3 @@
-import "../index/tailwind.css";
 import Taro, { useLoad } from "@tarojs/taro";
 import { View, Text, ScrollView, Image } from "@tarojs/components";
 import CardList from "../../components/Cards";

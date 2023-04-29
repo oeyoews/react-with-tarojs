@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text } from "@tarojs/components";
 import Taro from "@tarojs/taro";
-import "../index/tailwind.css"
+import "../../styles/tailwind.css";
 import { Button, Popup, Cell, Icon, Image, Tag } from '@antmjs/vantui'
 import Count from "../../components/Count";
 

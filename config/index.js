@@ -1,6 +1,11 @@
 const { UnifiedWebpackPluginV5 } = require("weapp-tailwindcss-webpack-plugin");
+const path = require('path')
 
 const config = {
+  alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/tailwind': path.resolve(__dirname, '..', 'src/styles/tailwind.css'),
+  },
   projectName: "myApp",
   date: "2023-4-26",
   designWidth: 750,
