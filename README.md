@@ -23,6 +23,7 @@ at last, open `wechat-devtool` to preview effects, or you can use `yarn run dev:
 
 ## TODO
 
+- swipable not support weapp
 - loading another is slow
 - add camelcase vscode plugin supported
 - ~~use `Redux` to manage state~~
