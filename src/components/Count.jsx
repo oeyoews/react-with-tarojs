@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "@antmjs/vantui";
 
 /**
  * Add count button
@@ -26,21 +27,30 @@ const Count = () => {
 
   return (
     <>
-      <button
+      <Button
+        type="warning"
+        plain
+        hairline
         onClick={clickHandler} // this setVariable is async, not realtime
-        className={buttonClasses}
+        // className={buttonClasses}
       >
         ^_^ Click 🍨 {count}
-      </button>
-      <button
+      </Button>
+      <Button
+        type="primary"
         onClick={clickHandler} // this setVariable is async, not realtime
         className="m-2 rounded border-none bg-red-200 p-2 duration-200 hover:scale-105 hover:bg-red-300"
       >
         ^_^ Click 🍨 {count}
-      </button>
-      <button onClick={() => setCount(0)} className={buttonClasses}>
+      </Button>
+      <Button
+        type="info"
+        plain
+        onClick={() => setCount(0)}
+        className={buttonClasses}
+      >
         Reset
-      </button>
+      </Button>
     </>
   );
 };
