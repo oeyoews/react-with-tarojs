@@ -1,0 +1,15 @@
+{
+	"Create Snippet": {
+		"prefix": "csn",
+		"body": [
+			"\"$1\": {",
+			"\t\"prefix\": \"$2\",",
+			"\t\"body\": [",
+			"\t\t\"$3\"",
+			"\t],",
+			"\t\"description\": \"$4\"",
+			"},",
+		],
+		"description": "Create a new code snippet"
+	}
+}
