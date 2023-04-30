@@ -4,6 +4,7 @@ import Taro from "@tarojs/taro";
 import "@/tailwind";
 import { Button, Popup, Cell, Icon, Image, Tag } from '@antmjs/vantui'
 import Count from "../../components/Count";
+import { FaBeer } from "react-icons/fa";
 
 function VantButtonDemo() {
   const [show, setShow] = useState(false);
@@ -17,6 +18,7 @@ function VantButtonDemo() {
 
   return (
     <View className="bg-lime-200 m-2 p-2 rounded">
+      <FaBeer />
       <Cell title="展示弹出层" isLink onClick={() => setShow(true)} />
       <Cell title="顶部弹出" isLink onClick={() => showAction('top')} />
       <Popup show={show} onClose={() => setShow(false)}>

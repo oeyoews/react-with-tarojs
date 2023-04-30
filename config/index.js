@@ -1,10 +1,10 @@
 const { UnifiedWebpackPluginV5 } = require("weapp-tailwindcss-webpack-plugin");
-const path = require('path')
+const path = require("path");
 
 const config = {
   alias: {
-    '@/components': path.resolve(__dirname, '..', 'src/components'),
-    '@/tailwind': path.resolve(__dirname, '..', 'src/styles/tailwind.css'),
+    "@/components": path.resolve(__dirname, "..", "src/components"),
+    "@/tailwind": path.resolve(__dirname, "..", "src/styles/tailwind.css"),
   },
   projectName: "myApp",
   date: "2023-4-26",
@@ -33,18 +33,21 @@ const config = {
       // include: ["pages/slides/index"], // `pages/nodes/nodes` 也会参与 prerender
     },
     webpackChain(chain, webpack) {
-      chain.merge({
-        plugin: {
-          install: {
-            plugin: UnifiedWebpackPluginV5,
-            args: [
-              {
-                appType: "taro",
-              },
-            ],
+      chain
+        .plugin("analyzer")
+        .use(require("webpack-bundle-analyzer").BundleAnalyzerPlugin, []),
+        chain.merge({
+          plugin: {
+            install: {
+              plugin: UnifiedWebpackPluginV5,
+              args: [
+                {
+                  appType: "taro",
+                },
+              ],
+            },
           },
-        },
-      });
+        });
     },
     postcss: {
       pxtransform: {
